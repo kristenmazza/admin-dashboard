@@ -1,0 +1,116 @@
+/* .menu li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 20px;
+    vertical-align: top;
+    line-height: 50px;
+} */
+
+html, body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    font-family: Roboto;
+}
+
+.header {
+    grid-column: 2 / 3;
+    background-color: #ffffff;
+    padding: 15px 30px 15px 30px;
+}
+
+.shadow {
+    height: 10px;
+    width: 100%;
+    background-image: linear-gradient(#c0c5cc, #e2e8f0);
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 50px 120px; 
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.upper-header .icon {
+    height: 20px;
+    width: 20px;
+}
+
+.upper-header #searchbar {
+    justify-self: start;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    background-color: #e2e8f0;
+}
+
+.upper-header .user-icon {
+    height: 45px;
+    width: 45px;
+}
+
+.upper-header .user-name {
+    justify-self: start;
+    font-weight: bold;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 5px;
+    padding: 15px 20px 0px 0px;
+}
+
+.lower-header .user-icon {
+    height: 70px;
+    width: 70px;
+    grid-row: 1 / 3;
+}
+
+.lower-header .greeting {
+    grid-row: 1 / 2;
+    align-self: end;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.lower-header .greeting-name {
+    grid-row: 2 / 3;
+    align-self: start;
+    font-weight: bold;
+}
+
+.lower-header .button {
+    grid-row: 1 / 3;
+    background-color: #ea9d6d;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 20px;
+    justify-self: center;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #ea9d6d;
+}
+
+.main-content {
+    background-color:#e2e8f0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
